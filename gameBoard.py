@@ -1,13 +1,9 @@
 # this will be the main GUI
 # v11
 
-# By Michael Layhe
-
 import tkinter
 from tkinter import *
 from random import *
-
-__author__ = "Michael Layhe"
 
 # global vars
 allPlayers = [1, 2]
