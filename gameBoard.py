@@ -1,5 +1,5 @@
 # this will be the main GUI
-# v11
+# v11 - Final - v.1.0
 
 import tkinter
 from tkinter import *
@@ -338,43 +338,6 @@ def render_obs():
 
 
 def gen_obs():
-    # # will be ran at game start
-    # obs1_loc = randint(1, 48)
-    # print("OBS GEN -- 1 = " + str(obs1_loc))
-    #
-    # obs2_loc = randint(1, 48)
-    # con = True
-    # while con == True:
-    #     if obs2_loc == obs1_loc:
-    #         obs2_loc = randint(1, 48)
-    #     else:
-    #         print("OBS GEN -- 2 = " + str(obs2_loc))
-    #         con = False
-    #
-    # con = True
-    # obs3_loc = randint(1, 48)
-    # while con == True:
-    #     if obs3_loc == obs1_loc or obs3_loc == obs2_loc:
-    #         obs3_loc = randint(1, 48)
-    #     else:
-    #         print("OBS GEN -- 3 = " + str(obs3_loc))
-    #         con = False
-    #
-    # con = True
-    # obs4_loc = randint(1, 48)
-    # while con == True:
-    #     if obs4_loc == obs1_loc or obs4_loc == obs2_loc or obs4_loc == obs3_loc:
-    #         obs4_loc = randint(1, 48)
-    #     else:
-    #         print("OBS GEN -- 4 = " + str(obs4_loc))
-    #         con = False
-    #
-    # # sets the new locations of the obstacles on the board
-    # board[obs1_loc] = 4
-    # board[obs2_loc] = 4
-    # board[obs3_loc] = 4
-    # board[obs4_loc] = 4
-
     global obs1_info
     global obs2_info
     global obs3_info
@@ -406,11 +369,6 @@ def gen_obs():
     board[int(obs4_info[0])] = 4
 
     render_obs()
-
-    # obs1_loc = split_arr[0].split(" ")
-    # obs2_loc = split_arr[1].split(" ")
-    # obs3_loc = split_arr[2].split(" ")
-    # obs4_loc = split_arr[3].split(" ")
 
 
 def obs_col(location):
